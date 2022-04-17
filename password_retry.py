@@ -1,0 +1,13 @@
+#密碼重試程式
+password = 'a123456'
+i = 3 #剩餘機會
+while True:
+      pwd = input('密碼為: ') #變數名稱不可有兩個password	
+      if pwd == password:
+        print('登入成功!')
+        break #逃出迴圈
+      else:  
+      	i = i - 1
+      	print('密碼錯誤!還有', i,'次機會')
+      	if i == 0:
+      		break
